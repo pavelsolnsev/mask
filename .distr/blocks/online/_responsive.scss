@@ -1,0 +1,42 @@
+.online {
+    @media (max-width: 575px) {
+        padding: 70px 0 0;
+        &__item {
+            margin-bottom: 20px;
+            span {
+                font-size: 50px;
+            }
+        }
+        &__text {
+            font-size: 32px;
+            margin-top: 50px;
+            margin-bottom: 12px;
+        }
+        &__price {
+            font-size: 68.0189px;
+            line-height: 95px;
+            margin-bottom: 40px;
+        }
+        &__button {
+            height: 132px;
+            margin-bottom: 50px;
+            flex-direction: column;
+            &-left, &-right {
+                max-width: 100%;
+            }
+            &-left {
+                margin-right: 0;
+                margin-bottom: 4px;
+            }
+        }
+        &__banner {
+            margin-bottom: 0;
+            margin-left: -15px;
+            margin-right: -15px;
+            text-align: center;
+            padding: 64px 20px 84px 20px;
+        }
+    }
+    @media (max-width: 359px) {
+    }
+}

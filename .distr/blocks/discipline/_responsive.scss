@@ -1,0 +1,14 @@
+.discipline {
+    @media (max-width: 575px) {
+        &__button {
+            max-width: 100%;
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 359px) {
+        &__title {
+            font-size: 36px;
+        }
+    }
+}

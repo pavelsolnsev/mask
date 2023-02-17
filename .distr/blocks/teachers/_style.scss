@@ -1,0 +1,57 @@
+.teachers {
+    &__title {
+        @include vw("margin-bottom: 176px;");
+        word-wrap: break-word;
+    }
+    &__item {
+        text-align: center;
+        position: relative;
+        transition: 1s;
+        top: 0;
+        &:hover {
+            @include vw("top: -70px;");
+            .teachers__wrap {
+                opacity: 1;
+                transition: 1s;
+            }
+        }
+    }
+    &__img {
+        @include vw("margin-bottom: 43px;");
+        @include vw("max-width: 369px;");
+    }
+    &__slider {
+        display: flex;
+    }
+    &__wrap {
+        text-align: center;
+        opacity: 0;
+        transition: 1s;
+    }
+    &__name {
+        font-weight: 800;
+        @include vw("font-size: 36px;");
+        line-height: 140.4%;
+        @include vw("margin-bottom: 20px;");
+    }
+    &__desc {
+        font-weight: 300;
+    }
+    .slick-list {
+        padding-right: 50px;
+    }
+    .slick-slider {
+        .teachers__item {
+            .teachers__wrap {
+                display: none;
+            }
+        }
+    }
+    .slick-active {
+        .teachers__item {
+            .teachers__wrap {
+                display: block;
+            }
+        }
+    }
+}

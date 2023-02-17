@@ -1,0 +1,13 @@
+.covid {
+    &__wrap {
+        display: flex;
+        align-items: flex-start;
+        img {
+            @include vw("width: 245px;");
+            @include vw("margin-top: -50px;");
+        }
+    }
+    &__title {
+        @include vw("margin-right: 60px;");
+    }
+}

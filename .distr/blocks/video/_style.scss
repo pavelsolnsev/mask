@@ -1,0 +1,38 @@
+.video {
+    &__wrap {
+        img {
+            @include vw("max-width: 215px;");
+        }
+        display: flex;
+        align-items: center;
+    }
+    &__main {
+        @include vw("margin-bottom: 65px;");
+    }
+    &__list {
+        @include vw("max-width: 740px;");
+        @include vw("margin-top: 20px;");
+        @include vw("margin-bottom: 60px;");
+    }
+    &__item {
+        font-weight: 700;
+        @include vw("font-size: 28px;");
+        @include vw("line-height: 39px;");
+        @include vw("margin-bottom: 20px;");
+        span {
+            @include vw("font-size: 60px;");
+            line-height: 140.4%;
+        }
+    }
+    &__title {
+        margin-bottom: 0;
+        @include vw("margin-left: 60px;");
+    }
+    &__button {
+        @include vw("max-width: 214px;");
+    }
+    &__text {
+        @include vw("font-size: 60px;");
+        margin-bottom: 0;
+    }
+}

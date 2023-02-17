@@ -1,0 +1,170 @@
+.main {
+    background: url("../img/main/main-bg.png") no-repeat right top, #fff;
+    @include vw("background-size: 920px;");
+    @include vw("padding: 30px 0 128px;");
+    position: relative;
+
+    &.main-bottom {
+        background: url("../img/main/main-bg-2.png") no-repeat left bottom, #fff;
+        @include vw("background-size: 570px;");
+        @include vw("padding: 112px 0 45px 420px;");
+        margin-bottom: -10px;
+        .main__wrap {
+            @include vw("margin-bottom: 130px;");
+            @include vw("padding-left: 90px;");
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__block {
+        @include vw("max-width: 1302px;");
+    }
+
+    &__desc {
+        font-weight: 500;
+        @include vw("font-size: 40px;");
+        line-height: 115%;
+        text-transform: uppercase;
+        @include vw("margin-bottom: 40px;");
+    }
+    &__title {
+        line-height: 80%;
+        letter-spacing: inherit;
+        @include vw("margin-bottom: 20px;");
+        br {
+            display: none;
+        }
+        span {
+            @include vw("font-size: 70px;");
+        }
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        @include vw("font-size: 32px;");
+        line-height: 141%;
+        text-transform: uppercase;
+        @include vw("margin-bottom: 40px;");
+    }
+
+    &__thanks {
+        font-weight: 700;
+        @include vw("font-size: 32px;");
+        line-height: 141%;
+        text-transform: uppercase;
+        color: #000000;
+        div {
+            display: flex;
+            @include vw("margin-top: 30px;");
+            a {
+                &:first-child {
+                    @include vw("margin-right: 87px;");
+                }
+                img {
+                    @include vw("width: 50px;");
+                }
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        @include vw("max-width: 663px;");
+        width: 100%;
+        @include vw("height: 64px;");
+        @include vw("margin-bottom: 108px;");
+        &-left {
+            max-width: 55%;
+            height: auto;
+        }
+
+        &-right {
+            height: auto;
+            background-color: transparent;
+            color: #000;
+            max-width: 45%;
+            &:active {
+                box-shadow: none;
+            }
+            &:hover,
+            &:focus {
+                box-shadow: none;
+                color: #000;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        li {
+            font-weight: 500;
+            @include vw("font-size: 24px;");
+            border-right: 1px solid $red;
+            padding-right: 3%;
+            margin-right: 3%;
+            span {
+                font-weight: 700;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    &__form {
+        @include vw("margin-bottom: 90px;");
+        @include vw("padding-left: 90px;");
+        .form {
+            &__title {
+                @include vw("font-size: 36px;");
+                @include vw("margin-bottom: 15px;");
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include vw("width: 945px;");
+    }
+
+    &__contact {
+        display: none;
+        align-items: center;
+        background-color: $red;
+        height: 75px;
+        padding: 0 20px;
+        a {
+            display: block;
+            img {
+            }
+        }
+        &-insta {
+            margin-right: 35px;
+            width: 30px;
+            height: 30px;
+        }
+
+        &-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        &-phone {
+            color: #fff;
+            margin-left: auto;
+            font-family: "Bebas Neue", cursive;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

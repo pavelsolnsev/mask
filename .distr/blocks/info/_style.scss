@@ -1,0 +1,36 @@
+.info {
+    position: relative;
+    @include vw("padding: 160px 0 50px;");
+    &__img-mob {
+        display: none;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include vw("width: 1150px;");
+    }
+
+    &__title {
+        @include vw("margin-bottom: 40px;");
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        @include vw("font-size: 70px;");
+    }
+
+    &__list {
+        max-width: 65%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        @include vw("margin-bottom: 57px;");
+        img {
+            @include vw("width: 60px;");
+            @include vw("margin-right: 16px;");
+        }
+    }
+}

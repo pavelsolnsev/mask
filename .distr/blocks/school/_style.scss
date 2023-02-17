@@ -1,0 +1,38 @@
+.school {
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        img {
+            @include vw("width: 89px;");
+            @include vw("margin-right: 45px;");
+            @include vw("margin-top: 10px;");
+        }
+
+        &-wrap {
+            width: 100%;
+        }
+
+        &-title {
+            font-weight: 300;
+            @include vw("font-size: 85px;");
+            @include vw("line-height: 120px;");
+            margin: 0;
+        }
+
+        &-button {
+            @include vw("max-width: 340px;");
+            &.black {
+                background-color: #000;
+            }
+        }
+    }
+    .row {
+        .col-12 {
+            &:last-child {
+                .school__item {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

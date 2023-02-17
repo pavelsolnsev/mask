@@ -1,0 +1,6 @@
+.discipline {
+    &__button {
+        @include vw("max-width: 341px;");
+        margin-left: auto;
+    }
+}

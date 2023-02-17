@@ -1,0 +1,23 @@
+.partner {
+    @media (max-width: 575px) {
+        &__wrap {
+            flex-direction: column-reverse;
+            img {
+                max-width: 281px;
+                margin: 0 auto;
+            }
+        }
+        &__title {
+            margin-top: 40px;
+        }
+        &__item {
+            font-size: 28px;
+            line-height: 39px;
+            span {
+                font-size: 60px;
+            }
+        }
+    }
+    @media (max-width: 359px) {
+    }
+}

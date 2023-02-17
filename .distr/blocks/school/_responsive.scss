@@ -1,0 +1,45 @@
+.school {
+    @media (max-width: 575px) {
+        &__title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 69px;
+            span {
+                font-size: 70.4441px;
+            }
+        }
+        &__item {
+            flex-direction: column;
+            margin-bottom: 75px;
+            img {
+                margin-right: 0;
+                margin-top: 0;
+                margin-bottom: 20px;
+                width: 89px;
+                margin: 0 auto;
+            }
+            &-title {
+                font-size: 32px;
+                line-height: 69px;
+                text-align: center;
+                margin-bottom: 0;
+                span {
+                    color: #000;
+                }
+            }
+            &-button {
+                max-width: 100%;
+            }
+        }
+    }
+    @media (max-width: 359px) {
+        &__title {
+            span {
+                font-size: 65px;
+            }
+        }
+        &-button {
+            font-size: 14px;
+        }
+    }
+}

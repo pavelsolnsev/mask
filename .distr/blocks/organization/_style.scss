@@ -1,0 +1,31 @@
+.organization {
+    &__title {
+        @include vw("font-size: 80px;");
+        @include vw("line-height: 90px;");
+        span {
+            display: inline;
+        }
+    }
+    &__wrap {
+        position: relative;
+    }
+
+    &__item {
+        font-weight: 700;
+        @include vw("font-size: 16px;");
+        @include vw("line-height: 20px;");
+        img {
+            @include vw("margin-bottom: 44px;");
+        }
+    }
+    .slick-slide {
+        @include vw("padding: 0 15px;");
+    }
+
+    .slick-list {
+        @include vw("margin: 0 -15px;");
+    }
+    .container-fluid {
+        padding: 0;
+    }
+}

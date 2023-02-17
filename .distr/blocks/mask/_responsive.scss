@@ -1,0 +1,20 @@
+.mask {
+    @media (max-width: 575px) {
+        background: url("../img/mask/mask.png") no-repeat center top, #fff;
+        background-size: 450px;
+        padding-top: 450px;
+        &__item {
+            max-width: 100%;
+            font-size: 24px;
+            margin-bottom: 50px;
+            padding-left: 40px;
+            &::before {
+                height: 24px;
+                width: 24px;
+                top: 3px;
+            }
+        }
+    }
+    @media (max-width: 359px) {
+    }
+}

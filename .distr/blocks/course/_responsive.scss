@@ -1,0 +1,60 @@
+.course {
+    @media (max-width: 575px) {
+        &__wrap-left {
+            display: none;
+        }
+        &__wrap-right {
+            background-color: #fff;
+            padding: 0 15px;
+        }
+        &__content {
+            padding-top: 0;
+            margin-bottom: 40px;
+            padding-left: 0;
+            &-title {
+                font-size: 70.4441px;
+                line-height: 40px;
+                color: $red;
+                font-weight: 700;
+                flex-direction: column;
+                div {
+                    display: flex;
+                    margin-top: 10px;
+                }
+                span {
+                    font-size: 28.8181px;
+                    &:nth-child(1) {
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2) {
+                        color: #000000;
+                    }
+                }
+            }
+
+            &-list {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                    margin-bottom: 50px;
+                }
+            }
+            &-icon {
+                margin-bottom: 25px;
+                width: 90px;
+                height: 90px;
+            }
+
+            &-text {
+                line-height: 39px;
+                max-width: 100%;
+                font-size: 24px;
+                line-height: 140.4%;
+            }
+        }
+    }
+    @media (max-width: 359px) {
+    }
+}

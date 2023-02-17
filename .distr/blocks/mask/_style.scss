@@ -1,0 +1,21 @@
+.mask {
+    background: url('../img/mask/mask.png') no-repeat right top, #fff;
+    @include vw("background-size: 760px;");
+    &__item {
+        font-weight: 700;
+        position: relative;
+        @include vw("padding-left: 40px;");
+        @include vw("margin-bottom: 50px;");
+        @include vw("max-width: 856px;");
+        &::before {
+            content: '';
+            @include vw("height: 24px;");
+            @include vw("width: 24px;");
+            background-color: $red;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            @include vw("top: 3px;");
+        }
+    }
+}

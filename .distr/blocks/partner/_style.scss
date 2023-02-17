@@ -1,0 +1,24 @@
+.partner {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    &__title {
+        @include vw("font-size: 75px;");
+        @include vw("line-height: 80px;");
+
+    }
+    &__img {
+        @include vw("max-width: 442px;");
+    }
+    &__item {
+        font-weight: 700;
+        @include vw("font-size: 28px;");
+        @include vw("line-height: 39px;");
+        span {
+            @include vw("font-size: 60px;");
+            line-height: 140.4%;
+        }
+    }
+}

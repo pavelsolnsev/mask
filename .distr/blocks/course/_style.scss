@@ -1,0 +1,87 @@
+.course {
+    padding: 0;
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    &__box {
+        position: relative;
+        display: flex;
+    }
+    &__block {
+        position: absolute;
+        @include vw("margin-left: -616px;");
+        left: 50% !important;
+        transform: translate(-50%, 0);
+        @include vw("top: 150px;");
+        &-title {
+            margin-bottom: 0;
+        }
+    }
+
+    &__wrap-left {
+        box-shadow: 85px 4px 22px rgba(0, 0, 0, 0.07);
+        @include vw("width: 709px;");
+        &::after {
+            content: "";
+            position: relative;
+            height: 100%;
+            width: 12%;
+            display: block;
+            margin-left: auto;
+            @include vw("margin-right: 25px;");
+            box-shadow: 6vw 4px 22px rgba(0, 0, 0, 0.07);
+        }
+    }
+    &__wrap-right {
+        background-color: #e5e5e5;
+    }
+
+    &__content {
+        @include vw("padding-top: 140px;");
+        @include vw("margin-bottom: 40px;");
+        @include vw("padding-left: 40px;");
+        background-color: #fff;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-title {
+            display: flex;
+            @include vw("font-size: 110px;");
+            color: #000000;
+            line-height: 109%;
+            font-weight: 500;
+            span {
+                @include vw("font-size: 45px;");
+                @include vw("padding-top: 15px;");
+                font-weight: 300;
+                &:nth-child(1) {
+                    @include vw("margin: 0 10px;");
+                }
+                &:nth-child(2) {
+                    color: #000000;
+                }
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                max-width: 50%;
+                flex: 0 0 50%;
+                @include vw("margin-bottom: 50px;");
+            }
+        }
+        &-icon {
+            @include vw("margin-bottom: 25px;");
+            @include vw("width: 90px;");
+            @include vw("height: 90px;");
+        }
+
+        &-text {
+            @include vw("line-height: 39px;");
+            @include vw("max-width: 410px");
+        }
+    }
+}

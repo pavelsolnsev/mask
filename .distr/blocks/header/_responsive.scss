@@ -1,0 +1,28 @@
+.header {
+
+	@media (max-width: 1169px) {
+
+	}
+
+	@media (max-width: 768px) {
+
+	}
+
+	@media (max-width: 575px) {
+		margin-bottom: 123px;
+		&__logo {
+			max-width: 158px;
+			img {
+				&:nth-child(1) {
+					display: none;
+				}
+				&:nth-child(2) {
+					display: block;
+				}
+			}
+		}
+		&__phone {
+			display: none;
+		}
+	}
+}

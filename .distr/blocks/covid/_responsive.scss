@@ -1,0 +1,22 @@
+.covid {
+    @media (max-width: 575px) {
+        &__wrap {
+            flex-direction: column-reverse;
+            img {
+              width: auto;
+              margin: 0 auto;
+            }
+        }
+        &__title {
+            font-size: 70.7634px;
+            line-height: 101px;
+            margin-right: 0;
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 359px) {
+        &__title {
+            font-size: 60.7634px;
+        }
+    }
+}

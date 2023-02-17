@@ -1,0 +1,53 @@
+.online {
+    background-color: #000 !important;
+    color: #fff;
+    &__item {
+        line-height: 140.4%;
+        @include vw("margin-bottom: 20px;");
+        span {
+            font-weight: 700;
+            @include vw("font-size: 50px;");
+            display: inline;
+        }
+    }
+    &__text {
+        font-weight: 300;
+        @include vw("font-size: 32px;");
+        line-height: 140.4%;
+        text-transform: uppercase;
+        @include vw("margin-top: 50px;");
+        @include vw("margin-bottom: 12px;");
+    }
+
+    &__price {
+        font-weight: 700;
+        @include vw("font-size: 68.0189px;");
+        @include vw("line-height: 95px;");
+        @include vw("margin-bottom: 40px;");
+    }
+    &__button {
+        display: flex;
+        @include vw("height: 80px;");
+        &-left {
+            @include vw("margin-right: 12px;");
+            @include vw("max-width: 251px;");
+            height: auto;
+        }
+        &-right {
+            background-color: #fff;
+            color: #000;
+            @include vw("max-width: 352px;");
+            height: auto;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+    &__banner {
+        background-color: $red;
+        font-weight: 900;
+        @include vw("padding: 108px 105px;");
+        @include vw("font-size: 59.7656px;");
+        @include vw("line-height: 64px;");
+    }
+}
